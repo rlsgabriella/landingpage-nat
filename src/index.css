@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-soft-linen-50: #f4f4f0;
+  --color-soft-linen-100: #e9e9e2;
+  --color-soft-linen-200: #d4d2c4;
+  --color-soft-linen-300: #bebca7;
+  --color-soft-linen-400: #a8a68a;
+  --color-soft-linen-500: #938f6c;
+  --color-soft-linen-600: #757357;
+  --color-soft-linen-700: #585641;
+  --color-soft-linen-800: #3b392b;
+  --color-soft-linen-900: #1d1d16;
+  --color-soft-linen-950: #15140f;
+
+  --color-platinum-50: #f1f2f3;
+  --color-platinum-100: #e4e5e7;
+  --color-platinum-200: #c8cbd0;
+  --color-platinum-300: #adb1b8;
+  --color-platinum-400: #9297a0;
+  --color-platinum-500: #777d88;
+  --color-platinum-600: #5f646d;
+  --color-platinum-700: #474b52;
+  --color-platinum-800: #2f3237;
+  --color-platinum-900: #18191b;
+  --color-platinum-950: #111113;
+
+  --color-gunmetal-50: #f1f3f3;
+  --color-gunmetal-100: #e4e6e7;
+  --color-gunmetal-200: #c8ced0;
+  --color-gunmetal-300: #adb5b8;
+  --color-gunmetal-400: #929ca0;
+  --color-gunmetal-500: #778388;
+  --color-gunmetal-600: #5f696d;
+  --color-gunmetal-700: #474f52;
+  --color-gunmetal-800: #2f3537;
+  --color-gunmetal-900: #181a1b;
+  --color-gunmetal-950: #111213;
+
+  --color-tomato-50: #fdece7;
+  --color-tomato-100: #fbd8d0;
+  --color-tomato-200: #f7b2a1;
+  --color-tomato-300: #f48b71;
+  --color-tomato-400: #f06542;
+  --color-tomato-500: #ec3e13;
+  --color-tomato-600: #bd320f;
+  --color-tomato-700: #8e250b;
+  --color-tomato-800: #5e1908;
+  --color-tomato-900: #2f0c04;
+  --color-tomato-950: #210903;
+
+  --color-fern-50: #f1f6ee;
+  --color-fern-100: #e3edde;
+  --color-fern-200: #c7dcbc;
+  --color-fern-300: #abca9b;
+  --color-fern-400: #90b979;
+  --color-fern-500: #74a758;
+  --color-fern-600: #5d8646;
+  --color-fern-700: #456435;
+  --color-fern-800: #2e4323;
+  --color-fern-900: #172112;
+  --color-fern-950: #10170c;
+}
+
+@layer base {
+  body {
+    @apply bg-soft-linen-50 text-gunmetal-900 font-sans antialiased;
+  }
+}

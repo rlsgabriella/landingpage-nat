@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# Natalier Júnior | Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page premium, moderna e responsiva desenvolvida para apresentar o portfólio de serviços do profissional do audiovisual Natalier Júnior.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi criado com as tecnologias mais modernas do ecossistema front-end:
 
-## React Compiler
+*   **[React 19](https://react.dev/)**: Biblioteca JavaScript para construção da interface de usuário.
+*   **[TypeScript](https://www.typescriptlang.org/)**: Superset tipado do JavaScript para maior segurança no código.
+*   **[Vite](https://vitejs.dev/)**: Ferramenta de build extremamente rápida.
+*   **[Tailwind CSS v4](https://tailwindcss.com/)**: Framework CSS utilitário para estilização rápida e responsiva.
+*   **[Lucide React](https://lucide.dev/)**: Biblioteca de ícones bonitos e consistentes em SVG.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Design e UI/UX
 
-## Expanding the ESLint configuration
+A interface foi projetada com fortes conceitos de UI premium:
+*   **Aesthetics**: Glass-morphism elegante e contrastes de tons pastéis customizados.
+*   **Tipografia**: Fonte moderna *Inter* definida como a principal.
+*   **Responsividade**: Totalmente funcional em dispositivos móveis, tablets e monitores widescreen.
+*   **UX**: Scroll suave entre as seções e micro-interações ao colocar o mouse sobre os cards (hover states).
+*   **Carrosel Interativo**: Seção de depoimentos com carrosel fluido e botões de navegação personalizados para desktop.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Como rodar o projeto localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Siga os passos abaixo para rodar o projeto na sua máquina:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Pré-requisitos
+*   [Node.js](https://nodejs.org/) (versão 18 ou superior recomendada)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Instalação
+
+1.  Clone este repositório:
+    ```bash
+    git clone https://github.com/rlsgabriella/landingpage-nat.git
+    ```
+2.  Acesse o diretório do projeto:
+    ```bash
+    cd landingpage-nat
+    ```
+3.  Instale todas as dependências:
+    ```bash
+    npm install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+5.  Acesse o projeto pelo navegador na porta indicada (geralmente `http://localhost:5173/`).
+
+## 📁 Estrutura de Arquivos
+
+```
+src/
+├── components/          # Componentes React de cada seção da página
+│   ├── Hero.tsx         # Primeira dobra com vídeo de fundo
+│   ├── ValueProp.tsx    # Proposta de valor
+│   ├── Categories.tsx   # Categorias de serviço (Fotografia, Vídeo, etc)
+│   ├── Portfolio.tsx    # Grid de projetos e documentários 
+│   ├── Testimonials.tsx # Carrosel scrollável de avaliações 
+│   ├── About.tsx        # Seção Sobre com biografia
+│   └── Offer.tsx        # Call-to-action final (Contato WhatsApp)
+├── App.tsx              # Componente principal que une a página
+├── index.css            # Configurações do Tailwind CSS v4 e cores customizadas
+└── main.tsx             # Ponto de entrada do React
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Customização Futura
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+*   **Imagens/Vídeos**: O vídeo real do `Hero.tsx` pode ser inserido colocando o arquivo `.mp4` na pasta `/public` e apontando a tag `<video src="/meu-video.mp4" />`. O mesmo serve para as fotos do portfólio.
+*   **Textos**: Todo o conteúdo é facilmente editável diretamente dentro dos arquivos `tsx` na pasta `components`.
+*   **Cores**: A paleta base (`soft-linen`, `platinum`, `gunmetal`, `tomato`, `fern`) está configurada no topo do arquivo `src/index.css` através da nova sintaxe do Tailwind v4 (`@theme`).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Desenvolvido com 🤍 para o portfólio visual do Natalier Júnior.

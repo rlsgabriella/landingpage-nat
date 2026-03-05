@@ -1,9 +1,10 @@
 const logos = [
-    <img key="1" src="/logo-alan-wells.png" alt="Alan Wells" className="h-16 w-auto object-contain shrink-0" />,
-    <img key="2" src="/logo-cafe-jeri.png" alt="Café Jeri" className="h-16 w-auto object-contain shrink-0" />,
-    <img key="3" src="/logo-bloomberg.png" alt="Bloomberg Philanthropies" className="h-16 w-auto object-contain shrink-0" />,
-    <img key="4" src="/logo-coimbra.png" alt="Coimbra Academy" className="h-16 w-auto object-contain shrink-0" />,
-    <img key="5" src="/logo-coreau.png" alt="Prefeitura de Coreaú" className="h-16 w-auto object-contain shrink-0" />,
+    <img key="1" src="/logo-alan-wells.png" alt="Alan Wells" className="h-16 md:h-20 w-auto object-contain shrink-0" />,
+    <img key="2" src="/logo-cafe-jeri.png" alt="Café Jeri" className="h-24 md:h-32 w-auto object-contain shrink-0" />,
+    <img key="3" src="/logo-bloomberg.png" alt="Bloomberg Philanthropies" className="h-10 md:h-14 w-auto object-contain shrink-0" />,
+    <img key="4" src="/logo-coimbra.png" alt="Coimbra Academy" className="h-16 md:h-20 w-auto object-contain shrink-0" />,
+    <img key="5" src="/logo-coreau.png" alt="Prefeitura de Coreaú" className="h-12 md:h-16 w-auto object-contain shrink-0 -translate-y-2" />,
+    <img key="6" src="/logo-sobral.png" alt="Prefeitura de Sobral" className="h-10 md:h-14 w-auto object-contain shrink-0" />,
 ];
 
 export default function BrandsMarquee() {

@@ -5,9 +5,9 @@ const projects = [
         image: '/jovens-pelo-clima.jpg'
     },
     {
-        category: 'Produção de Conteúdo',
-        title: 'PREFEITURA DE SOBRAL',
-        image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800'
+        category: 'Material Empresarial',
+        title: 'Vulkan Strength',
+        image: '/material-empresarial.jpg'
     },
     {
         category: 'Produção de Conteúdo',
@@ -15,12 +15,12 @@ const projects = [
         image: '/aymi-linhares.jpg'
     },
     {
-        category: 'Eventos',
+        category: 'Fotografia Esportiva',
         title: 'SEROOCLUB',
-        image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800'
+        image: '/fotografia-esportiva.jpg'
     },
     {
-        category: 'Documentário Institucional',
+        category: 'Fotografia Coorporativa',
         title: 'ABERTURA CÂMARA DE VEREADORES DE COREAÚ 2026',
         image: '/camara-coreau.jpg'
     },

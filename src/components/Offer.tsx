@@ -12,11 +12,22 @@ export default function Offer() {
                     <span className="text-tomato-500">à sua medida?</span>
                 </h2>
 
-                <p className="text-xl text-platinum-200 font-light mb-12">
-                    Ideias no papel são apenas o começo. Que tal conversarmos para transformar seus planos em um material visual que traga resultados?
+                <p className="mb-12 text-sm font-semibold tracking-[0.2em] text-gunmetal-400 uppercase">
+                    Aguardo você para darmos o próximo passo.
                 </p>
 
-                <div className="bg-gunmetal-900/80 backdrop-blur-sm border border-gunmetal-700 rounded-3xl p-8 md:p-12 mb-12 max-w-3xl mx-auto shadow-2xl relative">
+                <a
+                    href="https://wa.me/5588999999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-fern-500 text-white px-8 py-5 rounded-full font-bold text-lg hover:bg-fern-600 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-fern-500/30 group mb-12"
+                >
+                    <MessageCircle size={24} />
+                    Iniciar conversa no WhatsApp
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform ml-2 opacity-80" />
+                </a>
+
+                <div className="bg-gunmetal-900/80 backdrop-blur-sm border border-gunmetal-700 rounded-3xl p-8 md:p-12 max-w-3xl mx-auto shadow-2xl relative">
                     <div className="absolute -top-4 -left-4 text-6xl text-tomato-500/20">"</div>
                     <p className="text-lg text-platinum-100 italic leading-relaxed font-light relative z-10">
                         Não acredito em fórmulas prontas. Meu objetivo é entender o que a sua marca precisa hoje para desenvolver um material único. Seja para um café presencial ou uma chamada rápida, estou à disposição.
@@ -24,20 +35,6 @@ export default function Offer() {
                     <div className="absolute -bottom-8 -right-4 text-6xl text-tomato-500/20">"</div>
                 </div>
 
-                <a
-                    href="https://wa.me/5588999999999"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-fern-500 text-white px-8 py-5 rounded-full font-bold text-lg hover:bg-fern-600 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-fern-500/30 group"
-                >
-                    <MessageCircle size={24} />
-                    Iniciar conversa no WhatsApp
-                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform ml-2 opacity-80" />
-                </a>
-
-                <p className="mt-8 text-sm font-semibold tracking-[0.2em] text-gunmetal-400 uppercase">
-                    Aguardo você para darmos o próximo passo.
-                </p>
             </div>
         </section>
     );

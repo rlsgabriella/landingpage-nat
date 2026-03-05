@@ -30,7 +30,7 @@ const SportsProject: React.FC = () => {
                                 Fotografia <br /> Esportiva
                             </h2>
                             <p className="text-white/90 text-sm sm:text-base lg:text-lg font-medium font-sans tracking-wide [text-shadow:0_0_20px_rgba(0,0,0,1)] text-center">
-                                Capturando a Essência da Alta Performance.
+                                Capturando a essência da alta performance.
                             </p>
                         </div>
 

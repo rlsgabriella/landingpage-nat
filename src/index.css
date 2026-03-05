@@ -64,6 +64,43 @@
   --color-fern-800: #2e4323;
   --color-fern-900: #172112;
   --color-fern-950: #10170c;
+  --color-moss: #2E4036;
+  --color-cream: #F2F0E9;
+  --color-clay: #CC5833;
+
+  /* Dark Premium additions */
+  --color-obsidian: #0D0D12;
+  --color-vibrant-orange: #FF4500;
+
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+/* Custom Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+  /* Shift by half since we duplicated the content */
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 @layer base {

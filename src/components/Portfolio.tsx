@@ -2,7 +2,7 @@ const projects = [
     {
         category: 'Documentário Institucional',
         title: 'JOVENS PELO CLIMA 2025',
-        image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800'
+        image: '/jovens-pelo-clima.jpg'
     },
     {
         category: 'Produção de Conteúdo',
@@ -12,7 +12,7 @@ const projects = [
     {
         category: 'Produção de Conteúdo',
         title: 'NUTRICIONISTA, AYMI LINHARES',
-        image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800'
+        image: '/aymi-linhares.jpg'
     },
     {
         category: 'Eventos',
@@ -22,12 +22,12 @@ const projects = [
     {
         category: 'Documentário Institucional',
         title: 'ABERTURA CÂMARA DE VEREADORES DE COREAÚ 2026',
-        image: 'https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&q=80&w=800'
+        image: '/camara-coreau.jpg'
     },
     {
         category: 'Eventos',
         title: 'VIRADA DE ANO CAFÉ JERI',
-        image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&q=80&w=800'
+        image: '/virada-cafe-jeri.png'
     }
 ];
 
@@ -45,12 +45,15 @@ export default function Portfolio() {
                     </p>
                 </div>
 
-                {/* Custom horizontal scroll / grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Horizontal scroll on mobile, grid on desktop */}
+                <div
+                    className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 snap-x snap-mandatory pb-8 md:pb-0 hide-scrollbar"
+                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                >
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-gunmetal-900 cursor-pointer"
+                            className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-gunmetal-900 cursor-pointer flex-none w-[85vw] md:w-auto snap-center"
                         >
                             <img
                                 src={project.image}

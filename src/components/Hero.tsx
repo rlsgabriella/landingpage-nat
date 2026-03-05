@@ -27,10 +27,13 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-12 flex gap-4 animate-fade-in-up animation-delay-300">
-                    <a href="#offer" className="group flex items-center gap-2 bg-tomato-500 text-white px-8 py-4 rounded-full font-medium hover:bg-tomato-600 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-tomato-500/30">
+                    <button
+                        onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                        className="group flex items-center gap-2 bg-tomato-500 text-white px-8 py-4 rounded-full font-medium hover:bg-tomato-600 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-tomato-500/30 cursor-pointer"
+                    >
                         Conhecer o trabalho
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </a>
+                    </button>
                 </div>
             </div>
 

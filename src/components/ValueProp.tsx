@@ -13,7 +13,7 @@ export default function ValueProp() {
                     "Crio materiais institucionais, documentais e pessoais que vão te ajudar a olhar para o seu projeto sob outro ponto de vista."
                 </h2>
                 <p className="text-lg md:text-xl text-gunmetal-600 font-light max-w-2xl mx-auto border-t border-platinum-200 pt-8 inline-block">
-                    Baseado em <span className="font-semibold text-gunmetal-900 border-b-2 border-tomato-200">Sobral e Fortaleza</span>, atuo para entregarmos uma imagem à altura do seu profissionalismo.
+                    Baseado em <span className="font-semibold text-gunmetal-900 border-b-2 border-tomato-200">Sobral e Fortaleza</span>, atuo para <br className="hidden sm:block" /> entregarmos uma imagem à altura do seu profissionalismo.
                 </p>
             </div>
         </section>

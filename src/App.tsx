@@ -1,19 +1,23 @@
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ValueProp from './components/ValueProp';
 import Categories from './components/Categories';
 import Portfolio from './components/Portfolio';
+import BrandsMarquee from './components/BrandsMarquee';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Offer from './components/Offer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-soft-linen-50 overflow-x-hidden flex flex-col">
+    <div className="min-h-screen bg-soft-linen-50 overflow-x-hidden flex flex-col" id="top">
+      <Navbar />
       <main>
         <Hero />
         <ValueProp />
         <Categories />
         <Portfolio />
+        <BrandsMarquee />
         <Testimonials />
         <About />
         <Offer />

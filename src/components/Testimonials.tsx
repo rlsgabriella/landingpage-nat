@@ -45,7 +45,7 @@ export default function Testimonials() {
     };
 
     return (
-        <section className="py-24 bg-soft-linen-50 overflow-hidden relative">
+        <section className="py-24 bg-soft-linen-50 overflow-hidden relative" id="avaliacoes">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="text-center mb-16">
                     <h2 className="text-sm font-semibold text-tomato-600 tracking-wider uppercase mb-3">Avaliações reais no Google</h2>

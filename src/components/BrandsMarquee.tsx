@@ -9,7 +9,7 @@ const logos = [
 
 export default function BrandsMarquee() {
     return (
-        <section className="py-12 bg-[#1A1C20] overflow-hidden border-y border-white/5">
+        <section className="py-12 bg-[#1A1C20] overflow-hidden border-y border-white/5" id="parceiros">
             <div className="relative flex w-full">
                 {/* Gradient Masks for smooth fade on edges */}
                 <div className="absolute top-0 bottom-0 left-0 w-32 z-10 bg-gradient-to-r from-[#1A1C20] to-transparent pointer-events-none"></div>

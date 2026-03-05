@@ -44,20 +44,29 @@ export default function Navbar() {
                 </div>
 
                 {/* Navigation Links - Top Right */}
-                <div className="flex items-center gap-1 sm:gap-4">
-                    <button
-                        onClick={() => scrollToSection('top')}
-                        className={`px-4 py-2 rounded-full font-medium text-sm transition-all ${scrolled
-                            ? 'text-platinum-200 hover:text-white hover:bg-gunmetal-800'
-                            : 'text-platinum-100/90 hover:text-white hover:bg-gunmetal-950/30'
-                            }`}
-                    >
-                        Início
-                    </button>
+                <div className="flex items-center gap-1 xl:gap-2">
+                    {[
+                        { id: 'top', label: 'Início', mobileClass: '' },
+                        { id: 'sobre-mim', label: 'Quem sou eu', mobileClass: 'hidden md:inline-block' },
+                        { id: 'portfolio', label: 'Portfólio', mobileClass: 'hidden md:inline-block' },
+                        { id: 'avaliacoes', label: 'Avaliações', mobileClass: 'hidden md:inline-block' },
+                        { id: 'parceiros', label: 'Parceiros', mobileClass: 'hidden lg:inline-block' },
+                    ].map((item) => (
+                        <button
+                            key={item.id}
+                            onClick={() => scrollToSection(item.id)}
+                            className={`${item.mobileClass} px-3 lg:px-4 py-2 rounded-full font-medium text-sm transition-all ${scrolled
+                                ? 'text-platinum-200 hover:text-white hover:bg-gunmetal-800'
+                                : 'text-platinum-100/90 hover:text-white hover:bg-gunmetal-950/30'
+                                }`}
+                        >
+                            {item.label}
+                        </button>
+                    ))}
 
                     <button
                         onClick={() => scrollToSection('offer')}
-                        className="px-5 py-2.5 rounded-full font-medium text-sm transition-all bg-tomato-500 text-white hover:bg-tomato-600 hover:scale-105 active:scale-95 shadow-md shadow-tomato-500/20"
+                        className="ml-1 sm:ml-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all bg-tomato-500 text-white hover:bg-tomato-600 hover:scale-105 active:scale-95 shadow-md shadow-tomato-500/20"
                     >
                         Contato
                     </button>

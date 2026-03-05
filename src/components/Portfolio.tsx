@@ -6,7 +6,7 @@ const projects = [
     },
     {
         category: 'Material Empresarial',
-        title: 'Vulkan Strength',
+        title: 'VULKAN STRENGTH',
         image: '/material-empresarial.jpg'
     },
     {

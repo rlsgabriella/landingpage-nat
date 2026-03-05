@@ -7,6 +7,8 @@ import BrandsMarquee from './components/BrandsMarquee';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Offer from './components/Offer';
+import SportsProject from './components/SportsProject';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Categories />
         <Portfolio />
         <BrandsMarquee />
+        <SportsProject />
         <Testimonials />
         <About />
         <Offer />

@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-b from-gunmetal-900/80 via-gunmetal-900/50 to-gunmetal-900/90 z-10" />
                 <iframe
                     className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 opacity-70"
-                    src="https://www.youtube.com/embed/caOAsIC2R-4?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=caOAsIC2R-4&modestbranding=1&playsinline=1&rel=0"
+                    src="https://www.youtube.com/embed/caOAsIC2R-4?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=caOAsIC2R-4&modestbranding=1&playsinline=1&rel=0&vq=hd1080"
                     allow="autoplay; encrypted-media"
                     title="Background Video"
                 />

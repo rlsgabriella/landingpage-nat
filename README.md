@@ -14,7 +14,7 @@ Este projeto foi criado com as tecnologias mais modernas do ecossistema front-en
 
 ## 🎨 Design e UI/UX
 
-A interface foi projetada com fortes conceitos de UI premium:
+A interface foi projetada com fortes conceitos de UI:
 *   **Aesthetics**: Glass-morphism elegante e contrastes de tons pastéis customizados.
 *   **Tipografia**: Fonte moderna *Inter* definida como a principal.
 *   **Responsividade**: Totalmente funcional em dispositivos móveis, tablets e monitores widescreen.

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SportsProject: React.FC = () => {
     return (
-        <section className="relative bg-[#0b0b0b] min-h-[100vh] lg:min-h-[850px] flex items-center overflow-hidden py-24 px-6 sm:px-12 lg:px-24">
+        <section id="frx" className="relative bg-[#0b0b0b] min-h-[100vh] lg:min-h-[850px] flex items-center overflow-hidden py-24 px-6 sm:px-12 lg:px-24">
             {/* Repeating Pattern Background */}
             <div
                 className="absolute inset-0 z-0 pointer-events-none"

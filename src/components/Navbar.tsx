@@ -27,7 +27,7 @@ export default function Navbar() {
     const navLinks = [
         { id: 'top', label: 'Início' },
         { id: 'sobre-mim', label: 'Quem sou eu' },
-        { id: 'portfolio', label: 'Portfólio' },
+        { id: 'frx', label: 'FRX' },
         { id: 'avaliacoes', label: 'Avaliações' },
         { id: 'parceiros', label: 'Parceiros' },
     ];

@@ -21,7 +21,7 @@ export default function Offer() {
                         </p>
 
                         <a
-                            href="https://wa.me/5588999999999"
+                            href="https://wa.me/558892249229"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-fern-500 text-white px-8 py-5 rounded-full font-bold text-lg hover:bg-fern-600 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-fern-500/30 group mb-12 lg:mb-0"

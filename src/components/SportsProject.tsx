@@ -2,58 +2,86 @@ import React from 'react';
 
 const SportsProject: React.FC = () => {
     return (
-        <section id="frx" className="relative bg-[#0b0b0b] min-h-[100vh] lg:min-h-[850px] flex items-center overflow-hidden py-24 px-6 sm:px-12 lg:px-24">
-            {/* Repeating Pattern Background */}
-            <div
-                className="absolute inset-0 z-0 pointer-events-none"
-                style={{
-                    backgroundImage: 'url("/logo-frx.jpg")',
-                    backgroundSize: 'clamp(350px, 40vw, 800px)',
-                    backgroundRepeat: 'repeat',
-                    backgroundPosition: 'top left'
-                }}
-            >
-                {/* Dark masking gradient to fade the pattern gradually towards the right where content sits - Softened */}
-                <div className="absolute inset-0 bg-black/20 lg:bg-gradient-to-r lg:from-transparent lg:via-[#0b0b0b]/60 lg:to-[#0b0b0b]/80 opacity-90 lg:opacity-100" />
-            </div>
+        <section id="frx" className="relative w-full bg-[#0b0b0b] overflow-hidden">
+            {/* O flex-col atua no mobile (criando o empilhamento). No lg, volta a ser block para preservar as posições absolutas */}
+            <div className="relative w-full max-w-[1920px] mx-auto flex flex-col lg:block py-16 lg:py-0 gap-8 min-h-screen lg:min-h-0">
 
-            {/* Main Content Container - Pushed to the right on large screens */}
-            <div className="relative z-10 w-full max-w-[1500px] mx-auto flex justify-center lg:justify-end items-center h-full">
+                {/* ---------------- BACKGROUNDS ---------------- */}
+                {/* Background para Desktop: dita a proporção/altura da seção para manter a compatibilidade com posições absolutas */}
+                <img
+                    src="/background-frx.jpeg"
+                    alt="Projeto FRX Fotografia Esportiva"
+                    className="hidden lg:block w-full h-auto relative z-0"
+                />
 
-                {/* Content Area (Takes up roughly right 70% of the screen) */}
-                <div className="w-full lg:w-[70%] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center pt-12 lg:pt-0">
+                {/* Background para Mobile: cover para moldura dos grafismos sem amassar */}
+                <div className="absolute inset-0 z-0 lg:hidden">
+                    <img
+                        src="/background-frx.jpeg"
+                        alt="Background Mobile Fundo"
+                        className="w-full h-full object-cover object-center opacity-80"
+                    />
+                    <div className="absolute inset-0 bg-[#0b0b0b]/40"></div>
+                </div>
 
-                    {/* Inner Left: Centered Text, Subtitle, and Button */}
-                    <div className="flex flex-col items-center justify-center gap-6 lg:gap-8 py-8 px-4 sm:py-12 sm:px-8 h-auto w-full order-2 lg:order-1 self-center w-full">
-                        <div className="flex flex-col items-center gap-4 text-center">
-                            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center tracking-tight leading-[1] [text-shadow:0_0_40px_rgba(0,0,0,1)] shadow-black/80 drop-shadow-[0_8px_15px_rgba(0,0,0,0.9)]">
-                                Fotografia <br /> Esportiva
-                            </h2>
-                            <p className="text-white/90 text-sm sm:text-base lg:text-lg font-medium font-sans tracking-wide [text-shadow:0_0_20px_rgba(0,0,0,1)] text-center">
-                                Capturando a essência da alta performance.
-                            </p>
-                        </div>
+                {/* ---------------- 1. TÍTULO ---------------- */}
+                <h2
+                    className="
+                        relative lg:absolute z-20 
+                        text-center lg:text-left text-white 
+                        text-3xl sm:text-4xl lg:text-[4rem] xl:text-[4.5rem] 
+                        font-black font-sans tracking-tight leading-[0.9] uppercase 
+                        [text-shadow:0_10px_30px_rgba(0,0,0,0.9)] 
+                        w-full lg:w-min whitespace-normal
+                        px-4 lg:px-0
+                        lg:top-[20%] lg:left-[30%]
+                        order-1 lg:order-none
+                    "
+                >
+                    FOTOGRAFIA ESPORTIVA
+                </h2>
 
-                        <a
-                            href="https://www.instagram.com/ofotograforx"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 px-6 py-2.5 rounded-full font-medium text-sm sm:text-base transition-all text-white/90 hover:text-white bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm [text-shadow:0_0_10px_rgba(0,0,0,0.8)]"
-                        >
-                            Explorar projeto de elite
-                        </a>
-                    </div>
+                {/* ---------------- 2. GALERIA (Empilhada no meio no Mobile, Direita no Desktop) ---------------- */}
+                <div
+                    className="
+                        relative lg:absolute z-10 
+                        w-[90%] mx-auto lg:mx-0 
+                        lg:w-[32.5%] lg:h-[61%] 
+                        rounded-2xl lg:rounded-[2.5%] overflow-hidden shadow-2xl
+                        order-2 lg:order-none
+                        lg:top-[19.5%] lg:right-[7.8%]
+                    "
+                >
+                    <img
+                        src="/img-frx.jpg"
+                        alt="Galeria Fotografia Esportiva"
+                        className="w-full h-auto lg:h-full object-cover transition-transform duration-[400ms] ease-in-out hover:scale-105 cursor-pointer aspect-square lg:aspect-auto"
+                    />
+                </div>
 
-                    {/* Inner Right: Single Collage Image (Enlarged and optionally reduced size from flex container) */}
-                    <div className="w-full max-w-xl mx-auto flex justify-center lg:justify-end order-1 lg:order-2 self-center">
-                        <div className="relative w-full shadow-[0_0_50px_rgba(0,0,0,1)] bg-[#0b0b0b] rounded-[1.5rem] overflow-hidden">
-                            <img
-                                src="/img-frx.jpg"
-                                className="w-full h-auto object-contain hover:scale-[1.03] transition-transform duration-500 rounded-[1.5rem]"
-                                alt="Fotografia Esportiva"
-                            />
-                        </div>
-                    </div>
+                {/* ---------------- 3. TEXTO E BOTÃO (Base no Mobile) ---------------- */}
+                <div
+                    className="
+                        relative lg:absolute z-20 
+                        flex flex-col items-center lg:items-start justify-center 
+                        w-[90%] lg:w-[35%] xl:w-[28%] 
+                        mx-auto lg:mx-0
+                        order-3 lg:order-none
+                        lg:top-[70%] lg:left-[30%] lg:-translate-y-1/2
+                    "
+                >
+                    <p className="text-white text-sm sm:text-base lg:text-lg xl:text-xl font-bold font-sans tracking-wide [text-shadow:0_4px_10px_rgba(0,0,0,0.8)] text-center lg:text-left mb-6 w-full px-2 lg:px-0">
+                        Capturando a essência da alta performance.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/ofotograforx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=" mx-auto md:mx-0 md:ml-20 inline-flex items-center justify-center px-6 py-3 lg:px-10 lg:py-4 rounded-full font-bold text-white text-sm lg:text-lg tracking-wide transition-all duration-300 bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95"
+                    >
+                        Explorar projeto de elite
+                    </a>
                 </div>
             </div>
         </section>

@@ -65,11 +65,4 @@ src/
 └── main.tsx             # Ponto de entrada do React
 ```
 
-## 📝 Customização Futura
-
-*   **Imagens/Vídeos**: O vídeo real do `Hero.tsx` pode ser inserido colocando o arquivo `.mp4` na pasta `/public` e apontando a tag `<video src="/meu-video.mp4" />`. O mesmo serve para as fotos do portfólio.
-*   **Textos**: Todo o conteúdo é facilmente editável diretamente dentro dos arquivos `tsx` na pasta `components`.
-*   **Cores**: A paleta base (`soft-linen`, `platinum`, `gunmetal`, `tomato`, `fern`) está configurada no topo do arquivo `src/index.css` através da nova sintaxe do Tailwind v4 (`@theme`).
-
----
 Desenvolvido com 🤍 para o portfólio visual do Natalier Júnior.

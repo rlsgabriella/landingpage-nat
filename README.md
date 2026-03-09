@@ -1,4 +1,4 @@
-# Natalier Júnior | Landing Page
+# Natalier Júnior | Landing Page (em construção, em breve será disponibilizado link para acesso e visualização)
 
 Uma landing page moderna e responsiva desenvolvida para apresentar o portfólio de serviços do profissional do audiovisual Natalier Júnior.
 

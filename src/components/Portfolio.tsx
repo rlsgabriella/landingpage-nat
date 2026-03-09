@@ -20,7 +20,7 @@ const projects = [
         image: '/fotografia-esportiva.jpg'
     },
     {
-        category: 'Fotografia Coorporativa',
+        category: 'Fotografia Corporativa',
         title: 'ABERTURA CÂMARA DE VEREADORES DE COREAÚ 2026',
         image: '/camara-coreau.jpg'
     },
